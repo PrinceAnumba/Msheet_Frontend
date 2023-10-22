@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary {
+  background: #34A853;
+}
+
+h1 {
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94%;
+}
+h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 117.5%;
+}
+h6 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p{
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  color: #7D7D7D;
+}
+
+.sign-up-btn {
+  background: #E0E0E0;
+}
+
+.input {
+  border-radius: 5px;
+  border: 2px solid #6d6d6d;
+  font-size: 12px;
+  width: 326px;
+  height: 20px;
+  padding: 20px;
+  color: #929292;
+}
