@@ -22,22 +22,25 @@ export default function Login() {
                 <div className="title">
                     <div className=' flex  justify-start items-center gap-8 '>
                         <Image className="cursor-pointer" onClick={() => router.back()} src={backBtn} alt="back-btn"/>
-                        <h2>Lets Log you in</h2>
+                        <h2 className="sm:text-xl">Lets Log you in</h2>
                     </div>
-                    <h6 className=" mx-16">Welcome Back , You have been missed</h6>
+                    <h6 className=" mx-16 sm:text-sm">Welcome Back , You have been missed</h6>
                 </div>
                 <div className="flex justify-center items-centter mt-24">
                     <form action="" className='flex flex-col gap-4 '>
-                        <input className='input' placeholder='Email Address' type="text" name="" id="" />
+                        <input className='input' placeholder='Email Address' type="email" name="" id="" />
                         <input className='input' placeholder='Password' type="password" name="" id="" />
                         <div className="flex justify-between items-center">
                             <span className="flex gap-2 justify-center"><input type="checkbox" name="" id="" /> <p>Remember me</p></span>
-                            <a href="#">Forgot Password?</a>
+                            <Link className='text-xs text-blue-400' href="/auth/pwdreset">Forgot Password?</Link>
                         </div>
-                        <button className="bg-primary text-white rounded p-4" type="submit">Login</button>
+                        <button className="bg-primary text-white rounded p-2 sm:text-sm" type="submit">Login</button>
+                        <div className="flex justify-center items-center">
+                            <p className=" px-4">Don't have an account? <Link href="/auth/signup" className="text-blue-400">Sign up</Link></p>
+                        </div>
                         <div className="decor relative flex justify-center items-center my-8">
                             <hr className="w-3/4" />
-                            <p className="absolute bg-white px-4">Sign In With</p>
+                            <p className="absolute bg-white px-4 rounded">Sign In With</p>
                         </div>
                     </form>
                 </div>
