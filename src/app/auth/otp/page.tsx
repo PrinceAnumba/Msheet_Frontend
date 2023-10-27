@@ -18,7 +18,7 @@ export default function Login() {
     const [activeOTPIndex, setActiveOtpIndex] = useState(0);
     const router = useRouter()
 
-    const inputRef = React.createRef<HTMLInputElement>(null);
+    const inputRef = React.createRef<HTMLInputElement>();
 
     const handleOnChange = ({target,}:React.ChangeEvent<HTMLInputElement>): void => {
         const { value } = target;
