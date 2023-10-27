@@ -37,7 +37,7 @@ export default function Login() {
 
     useEffect(() => {
         inputRef.current?.focus();
-    }, [activeOTPIndex]); 
+    }, [activeOTPIndex, inputRef]); 
 
     return (
         <main className="flex justify-center items-center h-screen relative">
