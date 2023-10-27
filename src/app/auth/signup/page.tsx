@@ -11,7 +11,7 @@ import Link from 'next/link'
 export default function Login() {
     const router = useRouter()
     return (
-        <main className="flex justify-center items-center xl:h-screen md:h-full relative">
+        <main className="flex justify-center items-center h-screen  relative">
             <Image className="absolute top-0 right-0 overflow-hidden" src={topVector} alt="bg-vector" />
             <div className="w-5/6 sm:my-12">
                 <div className="title">
@@ -21,8 +21,8 @@ export default function Login() {
                     </div>
                     <h6 className=" mx-16 sm:text-sm">Help us by telling us which category you fall in</h6>
                 </div>
-                <div className="flex xl:justify-start md:justify-center items-center xl:mt-24 sm:mt-8">
-                    <form action="" className='grid xl:grid-cols-2 grid-row-6 md:grid-cols-5 gap-4 sm:grid-cols-1'>
+                <div className="flex justify-center items-center mt-24 md:mt-8 sm:mt-8">
+                    <form action="" className='grid grid-cols-2 md:grid-cols-1 gap-4 sm:grid-cols-1'>
                         <input className='input' placeholder='School Name' type="text" name="" id="" />
                         <input className='input' placeholder='School Email' type="email" name="" id="" />
                         <input className='input' placeholder='School Location' type="text" name="" id="" />
