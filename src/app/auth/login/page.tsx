@@ -36,7 +36,7 @@ export default function Login() {
                         </div>
                         <button className="bg-primary text-white rounded p-2 sm:text-sm" type="submit">Login</button>
                         <div className="flex justify-center items-center">
-                            <p className=" px-4">Don't have an account? <Link href="/auth/signup" className="text-blue-400">Sign up</Link></p>
+                            <p className=" px-4">Don&apos;t have an account? <Link href="/auth/signup" className="text-blue-400">Sign up</Link></p>
                         </div>
                         <div className="decor relative flex justify-center items-center my-8">
                             <hr className="w-3/4" />
